@@ -1,0 +1,34 @@
+<template>
+    <lightning-card title="Automotive Vehicle Showcase" icon-name="custom:custom36">
+        <div class="showcase slds-var-p-horizontal_medium slds-var-p-bottom_medium">
+            <template lwc:if={isLoading}>
+                <lightning-spinner alternative-text="Loading vehicles"></lightning-spinner>
+            </template>
+
+            <template lwc:if={errorMessage}>
+                <div class="notice" role="status">{errorMessage}</div>
+            </template>
+
+            <div class="vehicle-grid">
+                <template for:each={vehicles} for:item="vehicle">
+                    <article class="vehicle-card" key={vehicle.id}>
+                        <div class="vehicle-icon">
+                            <lightning-icon
+                                icon-name="utility:automobile"
+                                alternative-text="Vehicle"
+                                size="large"
+                            ></lightning-icon>
+                        </div>
+                        <div class="vehicle-copy">
+                            <p class="vehicle-year">{vehicle.year}</p>
+                            <h2>{vehicle.name}</h2>
+                            <p class="vehicle-model">{vehicle.make} {vehicle.model}</p>
+                            <p class="vehicle-description">{vehicle.description}</p>
+                            <p class="vehicle-price">{vehicle.price}</p>
+                        </div>
+                    </article>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>
