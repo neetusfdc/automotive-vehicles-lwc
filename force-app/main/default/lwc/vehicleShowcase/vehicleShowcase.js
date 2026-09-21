@@ -58,7 +58,7 @@ export default class VehicleShowcase extends LightningElement {
             name: vehicle.Name,
             make: vehicle.Make__c || 'Automotive',
             model: vehicle.Model__c || 'Vehicle',
-            year: vehicle.Year__c || '—',
+            year: vehicle.Year__c || 'Year unavailable',
             description: vehicle.Description__c || 'No description available.',
             price: this.formatPrice(vehicle.Price__c)
         };
