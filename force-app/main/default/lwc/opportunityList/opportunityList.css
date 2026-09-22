@@ -1,0 +1,7 @@
+.table-wrapper {
+    min-height: 8rem;
+}
+
+.filters {
+    align-items: flex-end;
+}

@@ -11,10 +11,15 @@ available.
 - `VehicleController` Apex class with a cacheable, sharing-aware query
 - `VehicleControllerTest` covering the query and year ordering
 - `vehicleShowcase` LWC exposed on app, home, and record pages
+- `OpportunityController` Apex class with a paginated, sortable Opportunity query
+- `OpportunityControllerTest` covering search, stage filtering, sorting, and paging
+- `opportunityList` LWC showing Opportunities in a `lightning-datatable` with name
+  search, stage filter, column sorting, and pagination
 
 ## Deploy and use
 
 1. Authenticate with a Salesforce org using Salesforce CLI.
 2. Deploy the source with `sf project deploy start --source-dir force-app`.
 3. Add a few `Vehicle__c` records or use the included fallback sample cards.
-4. Add **Automotive Vehicle Showcase** to a Lightning page in Lightning App Builder.
+4. Add **Automotive Vehicle Showcase** or **Opportunity List** to a Lightning page in
+   Lightning App Builder.
