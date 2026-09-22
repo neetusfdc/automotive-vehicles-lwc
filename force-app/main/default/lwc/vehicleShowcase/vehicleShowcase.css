@@ -1,8 +1,8 @@
 :host {
     display: block;
-    --vehicle-ink: #172033;
-    --vehicle-muted: #667085;
-    --vehicle-accent: #0b5cab;
+    --vehicle-ink: #003b6f;
+    --vehicle-muted: #003b6f;
+    --vehicle-accent: #003b6f;
 }
 
 .showcase {
@@ -82,5 +82,5 @@ h2 {
     border-left: 3px solid #fe9339;
     padding: 0.75rem 1rem;
     background: #fff7ed;
-    color: #7c2d12;
+    color: #003b6f;
 }
